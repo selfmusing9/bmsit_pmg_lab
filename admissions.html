@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join our team! Apply now to be part of an innovative company working on cutting-edge AI projects.">
+    <meta name="description" content="Join our dynamic team! Apply now to be part of our innovative AI-driven company.">
     <title>Join Our Team</title>
     <style>
         /* Basic reset and typography */
@@ -11,80 +11,103 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
-            padding: 0;
+            font-size: 18px;
         }
 
-        /* Header */
+        /* Header Section */
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
             color: white;
             text-align: center;
-            padding: 40px 0;
+            padding: 80px 20px;
+            border-bottom: 2px solid #feb47b;
         }
 
         h1 {
+            font-size: 4rem;
             margin-bottom: 10px;
-            font-size: 48px;
+            font-weight: 600;
         }
 
         h2 {
-            margin-top: 0;
-            font-size: 32px;
-            color: #fff;
+            font-size: 2.5rem;
             font-weight: 400;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            color: #f1f1f1;
+            font-size: 1.25rem;
+            color: #fff;
             margin-bottom: 20px;
         }
 
         /* Hero Section */
         .hero-section {
-            background: url('https://via.placeholder.com/1500x700?text=AI+Hiring+Page') center/cover no-repeat;
+            background: url('https://via.placeholder.com/1600x900/ff7e5f/ffffff?text=Join+Our+Team') center/cover no-repeat;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 10%;
         }
 
         .hero-section h2 {
-            font-size: 48px;
+            font-size: 4rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         }
 
         .hero-section p {
-            font-size: 22px;
+            font-size: 1.5rem;
             color: white;
-            margin-top: 10px;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+            margin-top: 15px;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        .hero-button:hover {
+            background-color: #ff4d3b;
+            transform: scale(1.05);
         }
 
         /* Why Work With Us Section */
         .work-section {
             padding: 60px 10%;
-            background-color: #fff;
+            background-color: white;
             text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: -80px auto 40px;
+            max-width: 1200px;
         }
 
         .work-section h2 {
-            font-size: 36px;
+            font-size: 3rem;
+            color: #ff7e5f;
             margin-bottom: 30px;
         }
 
         .work-section p {
-            font-size: 18px;
+            font-size: 1.25rem;
             color: #555;
             margin-bottom: 20px;
             line-height: 1.8;
@@ -94,43 +117,52 @@
             display: flex;
             justify-content: center;
             gap: 40px;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .benefit {
-            background-color: #ddd;
-            padding: 20px;
+            background-color: #ff7e5f;
+            padding: 25px;
             border-radius: 10px;
             width: 250px;
-            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: 0.3s ease;
         }
 
         .benefit h3 {
+            font-size: 1.5rem;
             margin-bottom: 15px;
-            font-size: 24px;
-            color: #333;
+            color: #fff;
+            font-weight: bold;
         }
 
         .benefit p {
-            font-size: 16px;
-            color: #555;
+            font-size: 1rem;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
         /* Application Form */
         .form-section {
             padding: 60px 10%;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             text-align: center;
         }
 
         .form-section h2 {
-            font-size: 36px;
+            font-size: 3rem;
             margin-bottom: 20px;
-            color: #333;
+            color: #ff7e5f;
         }
 
         .form-section p {
-            font-size: 18px;
+            font-size: 1.25rem;
             color: #555;
             margin-bottom: 30px;
         }
@@ -138,34 +170,47 @@
         form {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
+            background-color: #f9f9f9;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        form:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
         input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ff7e5f;
+            box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
         }
 
         input[type="submit"] {
-            background-color: #333;
+            background-color: #ff7e5f;
             color: white;
             border: none;
-            padding: 15px 25px;
-            cursor: pointer;
+            padding: 15px 30px;
             font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background-color: #555;
+            background-color: #ff4d3b;
+            transform: scale(1.05);
         }
 
         /* Footer */
@@ -174,6 +219,9 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
         footer p {
@@ -186,34 +234,35 @@
     <!-- Header -->
     <header>
         <h1>Join Our Team</h1>
-        <h2>We’re always looking for passionate, talented individuals to join our AI-driven innovation.</h2>
-        <p>Apply today and be a part of something exciting!</p>
+        <h2>Be a part of something exciting. Shape the future with us!</h2>
+        <p>We're always looking for passionate, talented individuals to join our growing team of innovators.</p>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div>
-            <h2>We're Hiring</h2>
-            <p>Help shape the future with AI! Join our team and work on cutting-edge technologies that make a real impact.</p>
+            <h2>We’re Hiring</h2>
+            <p>Ready to make a real impact? Apply now to join our AI-driven innovation team!</p>
+            <button class="hero-button">Apply Now</button>
         </div>
     </section>
 
     <!-- Why Work With Us Section -->
     <section class="work-section">
         <h2>Why Work With Us?</h2>
-        <p>At our company, we're not just building technology; we're building the future. Here's why you'll love working with us:</p>
+        <p>At our company, we don’t just build products—we build futures. Here’s what makes us unique:</p>
         <div class="benefits">
             <div class="benefit">
-                <h3>Innovation</h3>
-                <p>Work on groundbreaking AI projects with a team of passionate and talented individuals.</p>
+                <h3>Innovative Culture</h3>
+                <p>Collaborate with like-minded innovators and work on cutting-edge AI technologies that transform industries.</p>
             </div>
             <div class="benefit">
-                <h3>Growth</h3>
-                <p>We offer professional development, learning opportunities, and a clear path for career advancement.</p>
+                <h3>Career Growth</h3>
+                <p>With continuous learning and development, your career will grow as fast as the technologies we build.</p>
             </div>
             <div class="benefit">
                 <h3>Work-Life Balance</h3>
-                <p>Enjoy a flexible schedule, remote work options, and a culture that values your well-being.</p>
+                <p>Enjoy flexible working hours, remote options, and a healthy work-life balance that supports your well-being.</p>
             </div>
         </div>
     </section>
@@ -221,20 +270,5 @@
     <!-- Application Form Section -->
     <section class="form-section">
         <h2>Apply Now</h2>
-        <p>Fill out the form below to apply for an exciting position with us. Let’s shape the future of AI together!</p>
+        <p>Fill out the form below to submit your application and join our amazing team. We can’t wait to meet you!</p>
         <form action="/submit-application" method="post">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="text" name="position" placeholder="Position You're Applying For" required>
-            <textarea name="message" rows="6" placeholder="Why do you want to join us?" required></textarea>
-            <input type="submit" value="Submit Application">
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; BMSIT&M. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
